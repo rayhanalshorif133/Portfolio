@@ -5,5 +5,8 @@ tailwind.config = {
             'xl': '1024px',
             '2xl': '1280px',
         },
+        rotate: {
+            '30': '30deg',
+          },
     }
 }
