@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Collections of UI Designs</title>
+        <title>Examples Showcase || UI Designs</title>
         <meta name="description" content="Collections of UI Designs">
         <meta name="keywords"
             content="HTML, CSS, JavaScript, Tailwind CSS, Tailwind, UI, UI Designs, UI Design, Designs, Design, Collection, Collections, Collection of UI Designs, Collection of UI Design, Collection of Designs, Collection of Design">
@@ -25,6 +25,12 @@
         <script src="./assets/js/tailwind.config.js"></script>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <script src="https://unpkg.com/react@18/umd/react.development.js"
+            crossorigin></script>
+        <script
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+            crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     </head>
     <body class="bg-[#0F172A]">
@@ -42,23 +48,28 @@
                             Design</h2>
                     </div>
                     <div class="flex">
-                        <div class="flex space-x-8 border-r-[1px] border-gray-700 px-10">
-                            <div class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+                        <div
+                            class="flex space-x-8 border-r-[1px] border-gray-700 px-10">
+                            <div
+                                class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
                                 <a href="#">
                                     Docs
                                 </a>
                             </div>
-                            <div class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+                            <div
+                                class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
                                 <a href="#">
                                     Components
                                 </a>
                             </div>
-                            <div class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+                            <div
+                                class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
                                 <a href="#">
                                     Blog
                                 </a>
                             </div>
-                            <div class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+                            <div
+                                class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
                                 <a href="./showcase.html">
                                     Showcase
                                 </a>
@@ -81,9 +92,20 @@
             </div>
         </div>
 
+        <!-- slider Based part -->
         <div class="text-center justify-center mt-[7rem]">
             <h2 class="text-[#0FA4E9] font-bold text-base">Showcase</h2>
-            <h1 class="text-white text-6xl font-bold mt-5">You can build anything <br/> with Tailwind CSS.</h1>
+            <h1 class="text-white text-6xl font-bold mt-5">You can build
+                anything <br /> with Tailwind CSS.</h1>
         </div>
+        <div class="h-[2px] w-2/12 justify-center mx-auto bg-gray-400 mt-5"></div>
+        <div class="mt-14 max-w-[85rem] mx-auto justify-center xl:mx-10">
+        <div id="collectionOfShowcase"></div>
+        </div>
+
+
+
+
+        <script type="text/babel" src="./libs/react/showcase/index.js"></script>    
     </body>
 </html>
