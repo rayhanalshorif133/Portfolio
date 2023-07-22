@@ -1,14 +1,16 @@
 const showcaseItems = [{
-    'title': 'Showcase 1',
+    'title': 'Bolt Food',
     'image': 'https://picsum.photos/200/300?random=2',
     'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'url': 'https://www.google.com'
+    'url': './pages/bolt_food/index.html',
+    'github_url': false
 },
 {
     'title': 'Showcase 2',
     'image': 'https://picsum.photos/200/300?random=3',
     'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'url': 'https://www.google.com'
+    'url': 'https://www.google.com',
+    'github_url': false
 },
 ];
 
