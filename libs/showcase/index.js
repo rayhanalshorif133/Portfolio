@@ -6,11 +6,11 @@ const showcaseItems = [{
     'github_url': false
 },
 {
-    'title': 'Showcase 2',
-    'image': 'https://picsum.photos/200/300?random=3',
-    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'url': 'https://www.google.com',
-    'github_url': false
+    'title': 'Gozayaan Clone 🚀',
+    'image': './assets/images/gif/gozayaan_clone.gif',
+    'description': 'Gozayaan Clone 👍 Using HTML, CSS, Jquery',
+    'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
+    'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
 },
 ];
 
