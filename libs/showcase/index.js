@@ -1,7 +1,7 @@
 const showcaseItems = [{
     'title': 'Bolt Food',
-    'image': 'https://picsum.photos/200/300?random=2',
-    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'image': './assets/images/gif/bolt_food.gif',
+    'description': 'Blot-Food 🍲 Using Html and CSS',
     'url': './pages/bolt_food/index.html',
     'github_url': false
 },
@@ -35,7 +35,7 @@ function Showcase({ item }) {
         <div className="flex flex-col items-center justify-center cursor-pointer">
             <a href={url} target="_blank" className="w-11/12 h-auto rounded-lg bg-[#212C40]">
                 <div className="w-10/12 h-52 rounded-lg group cursor-pointer overflow-hidden  justify-center mx-auto mt-6">
-                    <img src={image} alt="showcase" className="w-full h-full object-cover group-hover:scale-105 
+                    <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 
                 transition-transform duration-200 ease-in-out"/>
                 </div>
                 <div className="mx-6">
