@@ -1,14 +1,23 @@
-const showcaseItems = [{
+const showcaseItems = [
+{
     'title': 'Bolt Food',
     'image': './assets/images/gif/bolt_food.gif',
-    'description': 'Blot-Food 🍲 Using Html and CSS',
+    'description': {
+        'des_title': 'Bolt Food',
+        'emoji': './assets/images/emojis/tomato.gif',
+        'conclusion': 'Using Html and CSS',
+    },
     'url': './pages/bolt_food/index.html',
     'github_url': false
 },
 {
     'title': 'Gozayaan Clone 🚀',
     'image': './assets/images/gif/gozayaan_clone.gif',
-    'description': 'Gozayaan Clone 👍 Using HTML, CSS, Jquery',
+    'description': {
+        'des_title': 'Gozayaan Clone',
+        'emoji': './assets/images/emojis/thumbs_up.gif',
+        'conclusion': 'Using HTML, CSS, Jquery',
+    },
     'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
     'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
 },
@@ -30,9 +39,10 @@ function Index() {
 function Showcase({ item }) {
 
     const { title,image,description,url } = item;
+    const  { des_title,emoji,conclusion } = description;
 
     return (
-        <div className="flex flex-col items-center justify-center cursor-pointer">
+        <div className="flex my-5 lg:my-0 flex-col items-center justify-center cursor-pointer">
             <a href={url} target="_blank" className="w-11/12 h-auto rounded-lg bg-[#212C40]">
                 <div className="w-10/12 h-52 rounded-lg group cursor-pointer overflow-hidden  justify-center mx-auto mt-6">
                     <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 
@@ -41,7 +51,9 @@ function Showcase({ item }) {
                 <div className="mx-6">
                     <h2 className="text-white text-[14px] font-semibold text-start pt-4 pb-2">{title}</h2>
                     <h3 className="text-[#79879C] text-[14px] font-semibold pb-2">
-                        {description}
+                        {des_title}
+                        {emoji? <img src={emoji} alt="emoji" className="inline-block w-4 h-4 mx-1" /> : " "}
+                        {conclusion}
                     </h3>
                 </div>
             </a>
