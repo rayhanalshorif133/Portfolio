@@ -31,207 +31,7 @@ const showcaseItems = [
     },
     'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
     'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
-},
-{
-    'title': 'Bolt Food',
-    'image': './assets/images/gif/bolt_food.gif',
-    'description': {
-        'des_title': 'Bolt Food',
-        'emoji': './assets/images/emojis/tomato.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': './pages/bolt_food/index.html',
-    'github_url': false
-},
-{
-    'title': 'Gozayaan Clone 🚀',
-    'image': './assets/images/gif/gozayaan_clone.gif',
-    'description': {
-        'des_title': 'Gozayaan Clone',
-        'emoji': './assets/images/emojis/thumbs_up.gif',
-        'conclusion': 'Using HTML, CSS, Jquery',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
-    'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
-},
-{
-    'title': 'Lambda Clone 🤗',
-    'image': './assets/images/gif/lambda_clone.gif',
-    'description': {
-        'des_title': 'Clone of Lambda Website',
-        'emoji': './assets/images/emojis/hug_face.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
-    'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
-},
-{
-    'title': 'Bolt Food',
-    'image': './assets/images/gif/bolt_food.gif',
-    'description': {
-        'des_title': 'Bolt Food',
-        'emoji': './assets/images/emojis/tomato.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': './pages/bolt_food/index.html',
-    'github_url': false
-},
-{
-    'title': 'Gozayaan Clone 🚀',
-    'image': './assets/images/gif/gozayaan_clone.gif',
-    'description': {
-        'des_title': 'Gozayaan Clone',
-        'emoji': './assets/images/emojis/thumbs_up.gif',
-        'conclusion': 'Using HTML, CSS, Jquery',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
-    'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
-},
-{
-    'title': 'Lambda Clone 🤗',
-    'image': './assets/images/gif/lambda_clone.gif',
-    'description': {
-        'des_title': 'Clone of Lambda Website',
-        'emoji': './assets/images/emojis/hug_face.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
-    'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
-},
-{
-    'title': 'Bolt Food',
-    'image': './assets/images/gif/bolt_food.gif',
-    'description': {
-        'des_title': 'Bolt Food',
-        'emoji': './assets/images/emojis/tomato.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': './pages/bolt_food/index.html',
-    'github_url': false
-},
-{
-    'title': 'Gozayaan Clone 🚀',
-    'image': './assets/images/gif/gozayaan_clone.gif',
-    'description': {
-        'des_title': 'Gozayaan Clone',
-        'emoji': './assets/images/emojis/thumbs_up.gif',
-        'conclusion': 'Using HTML, CSS, Jquery',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
-    'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
-},
-{
-    'title': 'Lambda Clone 🤗',
-    'image': './assets/images/gif/lambda_clone.gif',
-    'description': {
-        'des_title': 'Clone of Lambda Website',
-        'emoji': './assets/images/emojis/hug_face.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
-    'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
-},
-{
-    'title': 'Bolt Food',
-    'image': './assets/images/gif/bolt_food.gif',
-    'description': {
-        'des_title': 'Bolt Food',
-        'emoji': './assets/images/emojis/tomato.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': './pages/bolt_food/index.html',
-    'github_url': false
-},
-{
-    'title': 'Gozayaan Clone 🚀',
-    'image': './assets/images/gif/gozayaan_clone.gif',
-    'description': {
-        'des_title': 'Gozayaan Clone',
-        'emoji': './assets/images/emojis/thumbs_up.gif',
-        'conclusion': 'Using HTML, CSS, Jquery',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
-    'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
-},
-{
-    'title': 'Lambda Clone 🤗',
-    'image': './assets/images/gif/lambda_clone.gif',
-    'description': {
-        'des_title': 'Clone of Lambda Website',
-        'emoji': './assets/images/emojis/hug_face.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
-    'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
-},
-{
-    'title': 'Bolt Food',
-    'image': './assets/images/gif/bolt_food.gif',
-    'description': {
-        'des_title': 'Bolt Food',
-        'emoji': './assets/images/emojis/tomato.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': './pages/bolt_food/index.html',
-    'github_url': false
-},
-{
-    'title': 'Gozayaan Clone 🚀',
-    'image': './assets/images/gif/gozayaan_clone.gif',
-    'description': {
-        'des_title': 'Gozayaan Clone',
-        'emoji': './assets/images/emojis/thumbs_up.gif',
-        'conclusion': 'Using HTML, CSS, Jquery',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
-    'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
-},
-{
-    'title': 'Lambda Clone 🤗',
-    'image': './assets/images/gif/lambda_clone.gif',
-    'description': {
-        'des_title': 'Clone of Lambda Website',
-        'emoji': './assets/images/emojis/hug_face.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
-    'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
-},
-{
-    'title': 'Bolt Food',
-    'image': './assets/images/gif/bolt_food.gif',
-    'description': {
-        'des_title': 'Bolt Food',
-        'emoji': './assets/images/emojis/tomato.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': './pages/bolt_food/index.html',
-    'github_url': false
-},
-{
-    'title': 'Gozayaan Clone 🚀',
-    'image': './assets/images/gif/gozayaan_clone.gif',
-    'description': {
-        'des_title': 'Gozayaan Clone',
-        'emoji': './assets/images/emojis/thumbs_up.gif',
-        'conclusion': 'Using HTML, CSS, Jquery',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
-    'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
-},
-{
-    'title': 'Lambda Clone 🤗',
-    'image': './assets/images/gif/lambda_clone.gif',
-    'description': {
-        'des_title': 'Clone of Lambda Website',
-        'emoji': './assets/images/emojis/hug_face.gif',
-        'conclusion': 'Using Html and CSS',
-    },
-    'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
-    'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
-},
-
-];
+}];
 
 
 const animations = ['animate__bounceIn','animate__fadeInLeft','animate__fadeInDown','animate__fadeInDownBig','animate__flip','animate__lightSpeedInRight','animate__rotateIn'];
@@ -241,11 +41,29 @@ const animations_delays = ['animate__delay-2s','animate__delay-1s']
 
 function Index() {
 
+    // re-arrange the showcase items
+    showcaseItems.sort(() => Math.random() - 0.5);
+
+    var demoViews = [];
+
+    demoViews.push(showcaseItems);
+    demoViews.push(showcaseItems);
+    demoViews.push(showcaseItems);
+    demoViews.push(showcaseItems);
+
+
+    {/* showcaseItems.map((item, index) => {
+        return <Showcase key={index} item={item} />
+    })  */}
+
     return (<div
         className="grid grid-flow-row grid-cols-1 gap-0 mx-5 lg:grid-cols-2 xl:grid-cols-3 lg:gap-3 xl:gap-6 lg:mx-2 2xl:mx-0">
         {
-            showcaseItems.map((item, index) => {
-                return <Showcase key={index} item={item} />
+            demoViews.map((items, index) => {
+                items.sort(() => Math.random() - 0.5);
+                return items.map((item, index) => {
+                    return <Showcase key={index} item={item} />
+                })
             })
         }
     </div>);
