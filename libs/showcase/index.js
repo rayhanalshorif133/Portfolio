@@ -56,9 +56,9 @@ const showcaseItems = [
     },
     {
         'title': 'Portfolio Demo 1 🤗',
-        'image': './assets/images/gif/lambda_clone.gif',
+        'image': './assets/images/gif/working_on_1.gif',
         'description': {
-            'des_title': 'Clone of Lambda Website',
+            'des_title': 'Portfolio Website 1',
             'emoji': './assets/images/emojis/hug_face.gif',
             'conclusion': 'Using Html and CSS',
         },
@@ -66,12 +66,23 @@ const showcaseItems = [
         'github_url': false
     },
     {
-        'title': 'Gamer Zone 🤺',
-        'image': './assets/images/gif/lambda_clone.gif',
+        'title': 'Mouse Curser Changer 1',
+        'image': './assets/images/gif/mouse_curser_changer_1.gif',
         'description': {
-            'des_title': 'Clone of Lambda Website',
-            'emoji': './assets/images/emojis/hug_face.gif',
-            'conclusion': 'Using Html and CSS',
+            'des_title': 'Change Curser Pointer',
+            'emoji': './assets/images/emojis/grinning.gif',
+            'conclusion': 'Using Html, CSS and Js',
+        },
+        'url': './pages/mouse_curser_changer_1/index.html',
+        'github_url': false
+    },
+    {
+        'title': 'Gamer Zone 🤺',
+        'image': './assets/images/gif/working_on_1.gif',
+        'description': {
+            'des_title': 'Gamer Zone',
+            'emoji': './assets/images/emojis/rainbow.gif',
+            'conclusion': 'Using Html and Talwindcss',
         },
         'url': './pages/gamer_zone/index.html',
         'github_url': false
