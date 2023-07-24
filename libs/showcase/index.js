@@ -33,6 +33,17 @@ const showcaseItems = [
         'github_url': false
     },
     {
+        'title': 'Simple Text Animation 🕊',
+        'image': './assets/images/gif/simple_text_animation.gif',
+        'description': {
+            'des_title': 'Simple Text Animation',
+            'emoji': './assets/images/emojis/peace.gif',
+            'conclusion': 'Using Html, CSS and Js',
+        },
+        'url': './pages/simple_text_animation/index.html',
+        'github_url': false
+    },
+    {
         'title': 'Lambda Clone 🤗',
         'image': './assets/images/gif/lambda_clone.gif',
         'description': {
@@ -42,7 +53,30 @@ const showcaseItems = [
         },
         'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
         'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
-    }];
+    },
+    {
+        'title': 'Portfolio Demo 1 🤗',
+        'image': './assets/images/gif/lambda_clone.gif',
+        'description': {
+            'des_title': 'Clone of Lambda Website',
+            'emoji': './assets/images/emojis/hug_face.gif',
+            'conclusion': 'Using Html and CSS',
+        },
+        'url': './pages/portfolio_1/index.html',
+        'github_url': false
+    },
+    {
+        'title': 'Gamer Zone 🤺',
+        'image': './assets/images/gif/lambda_clone.gif',
+        'description': {
+            'des_title': 'Clone of Lambda Website',
+            'emoji': './assets/images/emojis/hug_face.gif',
+            'conclusion': 'Using Html and CSS',
+        },
+        'url': './pages/gamer_zone/index.html',
+        'github_url': false
+    }
+];
 
 
 const animations = ['animate__bounceIn', 'animate__fadeInLeft', 'animate__fadeInDown', 'animate__fadeInDownBig', 'animate__flip', 'animate__lightSpeedInRight', 'animate__rotateIn'];
