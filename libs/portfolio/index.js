@@ -20,37 +20,37 @@ const SideBar = () => {
                     </a>
                 </li>
                 <li className="my-1">
-                    <a className="hover:text-primary">
+                    <a className="text-[#A6ADBA] hover:text-primary">
                         <i className="fa-solid fa-briefcase mx-2"></i>
                         <span>Features</span>
                     </a>
                 </li>
                 <li className="my-1">
-                    <a className="hover:text-primary">
+                    <a className="text-[#A6ADBA] hover:text-primary">
                         <i className="fa-solid fa-layer-group mx-2"></i>
                         <span>Portfolio</span>
                     </a>
                 </li>
                 <li className="my-1">
-                    <a className="hover:text-primary">
+                    <a className="text-[#A6ADBA] hover:text-primary">
                         <i className="fa-solid fa-user-group mx-2"></i>
                         <span>Resume</span>
                     </a>
                 </li>
                 <li className="my-1">
-                    <a href="./showcase.html" className="hover:text-primary">
+                    <a href="./showcase.html" className="text-[#A6ADBA] hover:text-primary">
                         <i className="fa-solid fa-user mx-2"></i>
                         <span>Showcase</span>
                     </a>
                 </li>
                 <li className="my-1">
-                    <a className="hover:text-primary">
+                    <a className="text-[#A6ADBA] hover:text-primary">
                         <i className="fa-solid fa-image mx-2"></i>
                         <span>Blog</span>
                     </a>
                 </li>
                 <li className="my-1">
-                    <a className="hover:text-primary">
+                    <a className="text-[#A6ADBA] hover:text-primary">
                         <i className="fa-solid fa-comment mx-2"></i>
                         <span>Contacts</span>
                     </a>
