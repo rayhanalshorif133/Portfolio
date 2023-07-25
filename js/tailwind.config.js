@@ -2,6 +2,7 @@ tailwind.config = {
     theme: {
         screens: {
             'lg': '1021px',
+            'xl': '1281px',
         },
         fontFamily: {
             'montserrat': ['Montserrat', 'sans-serif'],

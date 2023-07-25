@@ -1,3 +1,51 @@
+const UiNav = () => {
+    return (<ul
+        className="menu text-base uppercase font-montserrat font-normal tracking-[1px]">
+        <li className="my-1">
+            <a href="#" className="text-primary">
+                <i className="fa-solid fa-house mx-2"></i>
+                <span>Home</span>
+            </a>
+        </li>
+        <li className="my-1">
+            <a className="text-[#A6ADBA] hover:text-primary">
+                <i className="fa-solid fa-briefcase mx-2"></i>
+                <span>Features</span>
+            </a>
+        </li>
+        <li className="my-1">
+            <a className="text-[#A6ADBA] hover:text-primary">
+                <i className="fa-solid fa-layer-group mx-2"></i>
+                <span>Portfolio</span>
+            </a>
+        </li>
+        <li className="my-1">
+            <a className="text-[#A6ADBA] hover:text-primary">
+                <i className="fa-solid fa-user-group mx-2"></i>
+                <span>Resume</span>
+            </a>
+        </li>
+        <li className="my-1">
+            <a href="./showcase.html" className="text-[#A6ADBA] hover:text-primary">
+                <i className="fa-solid fa-user mx-2"></i>
+                <span>Showcase</span>
+            </a>
+        </li>
+        <li className="my-1">
+            <a className="text-[#A6ADBA] hover:text-primary">
+                <i className="fa-solid fa-image mx-2"></i>
+                <span>Blog</span>
+            </a>
+        </li>
+        <li className="my-1">
+            <a className="text-[#A6ADBA] hover:text-primary">
+                <i className="fa-solid fa-comment mx-2"></i>
+                <span>Contacts</span>
+            </a>
+        </li>
+    </ul>);
+}
+
 const SideBar = () => {
     return (<div
         className="hidden lg:flex lg:flex-col w-[20%] bg-[#212428] border-r-[5px] border-[#000000] h-screen overflow-y-auto">
@@ -11,58 +59,14 @@ const SideBar = () => {
             </div>
         </header>
         <div className="pt-5 px-[10px]">
-            <ul
-                className="menu text-base uppercase font-montserrat font-normal tracking-[1px]">
-                <li className="my-1">
-                    <a href="#" className="text-primary">
-                        <i className="fa-solid fa-house mx-2"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li className="my-1">
-                    <a className="text-[#A6ADBA] hover:text-primary">
-                        <i className="fa-solid fa-briefcase mx-2"></i>
-                        <span>Features</span>
-                    </a>
-                </li>
-                <li className="my-1">
-                    <a className="text-[#A6ADBA] hover:text-primary">
-                        <i className="fa-solid fa-layer-group mx-2"></i>
-                        <span>Portfolio</span>
-                    </a>
-                </li>
-                <li className="my-1">
-                    <a className="text-[#A6ADBA] hover:text-primary">
-                        <i className="fa-solid fa-user-group mx-2"></i>
-                        <span>Resume</span>
-                    </a>
-                </li>
-                <li className="my-1">
-                    <a href="./showcase.html" className="text-[#A6ADBA] hover:text-primary">
-                        <i className="fa-solid fa-user mx-2"></i>
-                        <span>Showcase</span>
-                    </a>
-                </li>
-                <li className="my-1">
-                    <a className="text-[#A6ADBA] hover:text-primary">
-                        <i className="fa-solid fa-image mx-2"></i>
-                        <span>Blog</span>
-                    </a>
-                </li>
-                <li className="my-1">
-                    <a className="text-[#A6ADBA] hover:text-primary">
-                        <i className="fa-solid fa-comment mx-2"></i>
-                        <span>Contacts</span>
-                    </a>
-                </li>
-            </ul>
+            <UiNav/>
             <div
                 className="h-[1px] w-[80%] mx-auto text-center bg-[#383A3E]"></div>
             <div className="mt-5 px-[30px]">
                 <h2
                     className="uppercase text-[14px] text-[#c4cfde] tracking-[2px] font-poppins font-medium">find
                     with me</h2>
-                <div className="flex justify-between my-2">
+                <div className="flex justify-between my-2 mx-0 xl:mx-10">
                     <div
                         className="social_icon px-4 py-[12px] tooltip tooltip-top cursor-pointer transition duration-700 ease-in-out hover:text-facebook"
                         data-tip="facebook">
