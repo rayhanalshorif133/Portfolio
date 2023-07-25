@@ -67,13 +67,13 @@ const showcaseItems = [
     },
     {
         'title': 'Mouse Curser Changer 1',
-        'image': './assets/images/gif/mouse_curser_changer_1.gif',
+        'image': './assets/images/gif/mouse_curser_changer.gif',
         'description': {
             'des_title': 'Change Curser Pointer',
             'emoji': './assets/images/emojis/grinning.gif',
             'conclusion': 'Using Html, CSS and Js',
         },
-        'url': './pages/mouse_curser_changer_1/index.html',
+        'url': './pages/mouse_curser_changer/index.html',
         'github_url': false
     },
     {
