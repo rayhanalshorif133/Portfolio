@@ -6,59 +6,21 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./script.js"></script>
-
-        <style>
-
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                cursor: none;
-                
-            }
-
-            body{
-                width: 100vw;
-                height: 100vh;
-                background-color: #000;
-                overflow: hidden;
-                transition: all 1s ease-out;
-            }
-
-            #pointer-ring{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 35px;
-                height: 35px;
-                border: 2px solid #fff;
-                border-radius: 50%;
-                transform: translate(-50%, -50%);
-                pointer-events: none;
-                transition: all 1s ease-out;
-                transition-property: width, height, border-color,transition;
-                z-index: 10000;
-            }
-
-            #pointer-dot{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 5px;
-                height: 5px;
-                background-color: #fff;
-                border-radius: 50%;
-                transform: translate(-50%, -50%);
-                pointer-events: none;
-                transition-property: width, height, background-color;
-                z-index: 10000;
-            }
-            
-        </style>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     </head>
     <body class="bg-black">
+        <div class="h-screen active relative sidebar">
+            <div class="h-screen w-full border-r-[1px] border-gray-700 text-5xl text-white text-center bg-gray-700 content">
+                Hello
+            </div>
+            <div class="absolute bottom-10 -right-10 text-white">
+                <div class="h-10 w-10 bg-gray-700 text-white text-center sidebar_settings">
+                    <i class="fa-solid fa-gear fa-spin fa-xl  mt-[1.10rem]"></i>
+                </div>
+            </div>
+        </div>
         <div id="pointer-ring"></div>
         <div id="pointer-dot"></div>
-        <div class="cube"></div>
     </body>
 </html>
