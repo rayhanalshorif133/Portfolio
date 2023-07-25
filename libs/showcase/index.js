@@ -55,17 +55,6 @@ const showcaseItems = [
         'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
     },
     {
-        'title': 'Portfolio Demo 1 🤗',
-        'image': './assets/images/gif/working_on_1.gif',
-        'description': {
-            'des_title': 'Portfolio Website 1',
-            'emoji': './assets/images/emojis/hug_face.gif',
-            'conclusion': 'Using Html and CSS',
-        },
-        'url': './pages/portfolio_1/index.html',
-        'github_url': false
-    },
-    {
         'title': 'Mouse Curser Changer',
         'image': './assets/images/gif/mouse_curser_changer.gif',
         'description': {

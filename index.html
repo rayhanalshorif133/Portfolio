@@ -1,86 +1,159 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Collections of UI Designs</title>
-        <meta name="description" content="Collections of UI Designs">
-        <meta name="keywords"
-            content="HTML, CSS, JavaScript, Tailwind CSS, Tailwind, UI, UI Designs, UI Design, Designs, Design, Collection, Collections, Collection of UI Designs, Collection of UI Design, Collection of Designs, Collection of Design">
-        <meta name="author" content="Rayhan Al Shorif">
-        <meta name="robots" content="index, follow">
-        <meta name="googlebot" content="index, follow">
-        <meta name="google" content="notranslate">
-        <meta name="generator" content="Tailwind CSS v3.3.3">
-        <meta property="og:title" content="Collections of UI Designs">
-        <meta property="og:description" content="Collections of UI Designs">
-        <meta property="og:type" content="website">
-        <meta property="og:url"
-            content="https://rayhanalshorif133.github.io/UI-Design/">
-
-        <link rel="icon" type="image/png"
-            href="./assets/images/icons/favicon.png">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+            rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="./assets/js/tailwind.config.js"></script>
+        <script src="./js/tailwind.config.js"></script>
+
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+        <script src="./js/script.js"></script>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-            <script>
-                window.onload(function(){
-                    window.location.replace("https://rayhanalshorif133.github.io/UI-Design/showcase.html");
-                });
-            </script>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+
+        <!-- font-family: 'Montserrat', sans-serif; font-family: 'Poppins', sans-serif; -->
+
+        <style>
+            .box {
+                background: linear-gradient(145deg, #1e2024, #23272b);
+                box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+                transition: 0.4s;
+            }
+            .social_icon{
+                background: linear-gradient(145deg, #1e2024, #23272b);
+                box-shadow: 10px 10px 19px #2c3034, -10px -10px 19px #272c31;
+                transition: 0.4s;
+            }
+            .social_icon:hover{
+                background: linear-gradient(145deg, #1e2024, #23272b);
+                box-shadow: -10px -10px -19px #2c3034, 10px 10px 19px #272c31;
+                transition: 0.4s;
+            }
+
+        </style>
     </head>
-    <body class="bg-[#0F172A]">
-        <div
-            class="sticky top-0 z-40 border-b-[1px] border-gray-700 bg-gradient-to-r from-[#0F172A] to-[#183250] hover:bg-gradient-to-l">
-            <div class="max-w-[87rem] 2xl:mx-auto justify-center xl:mx-8">
-                <div
-                    class="flex items-center justify-between w-full py-4 text-white">
-                    <div class="flex">
-                        <a href="./index.html">
-                            <img src="./assets/images/tailwindcss.png"
-                                alt="Logo" class="w-auto h-5 mt-1">
-                        </a>
-                        <h2 class="ml-2 text-lg font-semibold">Collections of UI
-                            Design</h2>
+    <body>
+        <div class="flex">
+            <div
+                class="hidden lg:flex lg:flex-col w-[20%] bg-[#212428] border-r-[5px] border-[#000000] h-screen overflow-y-auto">
+                <header class="pt-[50px] mx-auto">
+                    <div class="avatar">
+                        <div
+                            class="w-full h-[200px] rounded-full border-[5px] border-[#32363b] shadow-md shadow-[#000000]/40">
+                            <img
+                                src="https://avatars.githubusercontent.com/u/126382033?s=400&u=7687a3f9f1364708dd1c7f9ee1367a48695a9203&v=4">
+                        </div>
                     </div>
-                    <div class="flex">
-                        <div class="flex space-x-8 border-r-[1px] border-gray-700 px-10">
-                            <div class="text-sm font-semibold leading-6 text-slate-200 dark:text-slate-200">
-                                <a href="./index.html">
-                                    Docs
-                                </a>
-                            </div>
-                            <div class="text-sm font-semibold leading-6 text-slate-200 dark:text-slate-200">
-                                <a href="#">
-                                    Blog
-                                </a>
-                            </div>
-                            <div class="text-sm font-semibold leading-6 text-slate-200 dark:text-slate-200">
-                                <a href="./showcase.html">
-                                    Showcase
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mx-2">
-                            <div class="relative">
+                </header>
+                <div class="pt-5 px-[10px]">
+                    <ul
+                        class="menu text-base uppercase font-montserrat font-normal tracking-[1px]">
+                        <li class="my-1">
+                            <a href="#" class="text-primary">
+                                <i class="fa-solid fa-house mx-2"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="hover:text-primary">
+                                <i class="fa-solid fa-briefcase mx-2"></i>
+                                <span>Features</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="hover:text-primary">
+                                <i class="fa-solid fa-layer-group mx-2"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="hover:text-primary">
+                                <i class="fa-solid fa-user-group mx-2"></i>
+                                <span>Resume</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a href="./showcase.html" class="hover:text-primary">
+                                <i class="fa-solid fa-user mx-2"></i>
+                                <span>Showcase</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="hover:text-primary">
+                                <i class="fa-solid fa-image mx-2"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="hover:text-primary">
+                                <i class="fa-solid fa-comment mx-2"></i>
+                                <span>Contacts</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div
+                        class="h-[1px] w-[80%] mx-auto text-center bg-[#383A3E]"></div>
+                    <div class="mt-5 px-[30px]">
+                        <h2
+                            class="uppercase text-[14px] text-[#c4cfde] tracking-[2px] font-poppins font-medium">find
+                            with me</h2>
+                        <div class="flex justify-between my-2">
+                            <div
+                                class="social_icon px-4 py-[12px] tooltip tooltip-top cursor-pointer transition duration-700 ease-in-out hover:text-facebook"
+                                data-tip="facebook">
                                 <i
-                                    class="text-gray-400 transition duration-150 ease-in-out cursor-pointer fa-regular fa-moon fa-lg hover:text-gray-100 -rotate-30"></i>
-                                <i
-                                    class="fa-solid fa-plus absolute text-[0.7rem] font-bold text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out cursor-pointer top-[5%] right-0"></i>
+                                    class="fa-brands fa-facebook-f font-bold shadow-2xl"></i>
                             </div>
-                        </div>
-                        <div class="mx-2">
-                            <i
-                                class="text-gray-400 transition duration-150 ease-in-out cursor-pointer fa-brands fa-github fa-lg hover:text-gray-100"></i>
+                            <div
+                                class="social_icon px-4 py-[12px] tooltip tooltip-top cursor-pointer transition duration-700 ease-in-out hover:text-twitter"
+                                data-tip="twitter">
+                                <i
+                                    class="fa-brands fa-twitter font-bold shadow-2xl"></i>
+                            </div>
+                            <div
+                                class="social_icon px-4 py-[12px] tooltip tooltip-top cursor-pointer transition duration-700 ease-in-out hover:text-email"
+                                data-tip="email">
+                                <i
+                                    class="fa-solid fa-envelope font-bold shadow-2xl"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="bg-[#212428] h-screen w-[80%] text-center mx-auto">
+                <div
+                    class="h-[20.2rem] w-[20.2rem] rounded-full text-center items-center flex mx-auto mt-[8rem] 
+                bg-gradient-to-r from-cyan-500 to-blue-500 largeProfileImage transition-all duration-700 ease-in-out">
+                    <img
+                        class="h-[19rem] w-[19rem] rounded-full text-center mx-auto items-center flex"
+                        src="https://avatars.githubusercontent.com/u/126382033?s=400&u=7687a3f9f1364708dd1c7f9ee1367a48695a9203&v=4">
+                </div>
+                <div class="mt-5">
+                    <h2
+                        class="font-bold text-center text-[48px] font-montserrat text-[#c4cfde]">Hi,
+                        I’m Rayhan Al Shorif</h2>
+                    <h5 class="text-[30px] font-poppins font-light"><span
+                            class="text-[#c4cfde] mr-2">I am a</span><span
+                            class="text-[#ff014f]" id="designationTypeWriter"></span></h5>
+                </div>
+                <div class="mt-5">
+                    <a
+                        class="box text-primary py-[15px] px-[35px] text-[14px] font-semibold rounded-[6px] uppercase"
+                        href="#contacts"><span>contact me</span></a>
+                </div>
+            </div>
         </div>
-
-        
     </body>
 </html>
