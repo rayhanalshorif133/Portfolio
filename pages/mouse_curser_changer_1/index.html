@@ -3,16 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- fav -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon.ico"/>
+
+        <title>Mouse Cursor Changer</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./script.js"></script>
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     </head>
     <body class="bg-black">
         <div class="h-screen active relative sidebar">
-            <div class="h-screen w-full border-r-[1px] border-gray-700 text-5xl text-white text-center bg-gray-700 content">
-                Hello
+            <div
+                class="h-screen w-full border-r-[1px] border-gray-800 bg-gray-700 content shadow-md">
+                <div class="text-left ml-2 py-2">
+                    <h2
+                        class="text-xl text-teal-500 font-bold choice_color_style">
+                        Choose colors and styles
+                        <img src="./emojis/rainbow.gif" alt
+                            class="inline-block ml-2 h-5 w-5 rotate-90">
+                    </h2>
+                    <div class="h-[1px] w-[95%] bg-gray-500"></div>
+                </div>
+                <div class="text-left ml-2 py-2">
+                    <h2 class="text-lg text-white font-bold">Background</h2>
+                    <div class="h-[1px] w-[95%] bg-gray-500"></div>
+                    <div class="mt-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-5 gap-0 collectionOfBgColors"></div>
+                    </div>
+                </div>
+                <div class="text-left ml-2 py-2">
+                    <h2 class="text-lg text-white font-bold">Cursor</h2>
+                    <div class="h-[1px] w-[95%] bg-gray-500"></div>
+                    <div class="mt-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-5 gap-0 collectionOfCursor text-white">
+                            <div data-cursor="normal" class="m-2"><i class="fa-solid fa-arrow-pointer h-8 w-8 hover:text-lg"></i></div>
+                            <div data-cursor="pointer_dot_ring" class="m-2">
+                                <div class="h-[30px] w-[30px] hover:h-[35px] hover:w-[35px] border-[2px] border-white rounded-full relative">
+                                    <div class="h-[3px] w-[3px] bg-white rounded-full absolute top-[48%] left-[48%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="absolute bottom-10 -right-10 text-white">
                 <div class="h-10 w-10 bg-gray-700 text-white text-center sidebar_settings">
@@ -20,7 +56,5 @@
                 </div>
             </div>
         </div>
-        <div id="pointer-ring"></div>
-        <div id="pointer-dot"></div>
     </body>
 </html>
