@@ -66,7 +66,7 @@ const showcaseItems = [
         'github_url': false
     },
     {
-        'title': 'Mouse Curser Changer 1',
+        'title': 'Mouse Curser Changer',
         'image': './assets/images/gif/mouse_curser_changer.gif',
         'description': {
             'des_title': 'Change Curser Pointer',
