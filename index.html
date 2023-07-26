@@ -10,7 +10,6 @@
         <script src="./js/tailwind.config.js"></script>
 
         <script src="./js/jquery-3.6.0.min.js"></script>
-        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -28,31 +27,59 @@
             src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
             crossorigin></script>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-        <!-- font-family: 'Montserrat', sans-serif; font-family: 'Poppins', sans-serif; -->
-
-        <style>
-            .box {
-                background: linear-gradient(145deg, #1e2024, #23272b);
-                box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-                transition: 0.4s;
-            }
-            .social_icon{
-                background: linear-gradient(145deg, #1e2024, #23272b);
-                box-shadow: 10px 10px 19px #2c3034, -10px -10px 19px #272c31;
-                transition: 0.4s;
-            }
-            .social_icon:hover{
-                background: linear-gradient(145deg, #1e2024, #23272b);
-                box-shadow: -10px -10px -19px #2c3034, 10px 10px 19px #272c31;
-                transition: 0.4s;
-            }
-            
-            </style>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js"></script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <div id="portfolio"></div>
-        <script type="text/babel" src="./libs/portfolio/index.js"></script>    
+        <div class="flex">
+            <div
+                class="hidden lg:flex lg:flex-col  xl:w-[25%] 2xl:w-[20%] 3xl:w-[15%] bg-[#212428] border-r-[5px] border-[#000000] h-screen overflow-y-auto no-scrollbar fixed top-0">
+                <div id="sideBar"></div>
+            </div>
+            <div
+                class="bg-[#212428] h-screen lg:w-full xl:w-[75%] 2xl:w-[80%] 3xl:w-[85%] text-center mx-auto justify-center mr-0 3xl:mr-10 2xl:mr-5 xl:mr-0">
+                <div
+                    class="h-[20.2rem] w-[20.2rem] rounded-full text-center items-center flex mx-auto mt-[8rem] 
+                bg-gradient-to-r from-cyan-500 to-blue-500 largeProfileImage transition-all duration-700 ease-in-out">
+                    <img
+                        class="h-[19rem] w-[19rem] rounded-full text-center mx-auto items-center flex"
+                        src="https://avatars.githubusercontent.com/u/126382033?s=400&u=7687a3f9f1364708dd1c7f9ee1367a48695a9203&v=4" />
+                </div>
+                <div class="mt-5 mx-auto">
+                    <h2
+                        class="font-bold text-center text-[48px] font-montserrat text-[#c4cfde]">Hi,
+                        I’m Rayhan Al Shorif</h2>
+                    <h5 class="text-[30px] font-poppins font-light"><span
+                            class="text-[#c4cfde] mr-2">I am a</span><span
+                            class="text-[#ff014f]" id="designationTypeWriter"></span></h5>
+                </div>
+                <div class="mt-5">
+                    <a
+                        class="box text-primary py-[15px] px-[35px] text-[14px] font-semibold rounded-[6px] uppercase"
+                        href="#contacts"><span>contact me</span></a>
+                </div>
+                <div
+                    class="h-[2px] w-[75%] my-10 mt-[10rem] mx-auto bg-[#000000]/40"></div>
+                <div id="whatIDo"></div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="py-10 mx-auto justify-center text-center">
+                        <h4
+                            class="text-primarySub font-montserrat text-sm tracking-wide font-medium py-1 justify-center text-center">VISIT
+                            MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
+                        <h2
+                            class="text-[#c4cfde] text-6xl font-bold font-montserrat tracking-wide py-5 justify-center text-center">
+                            My Portfolio</h2>
+                    </div>
+                </div>
+                <div
+                    class="h-[2px] w-[75%] my-10 mx-auto bg-[#000000]/40"></div>
+                <div id="myResume"></div>
+            </div>
+        </div>
+        <script type="text/babel" src="./libs/portfolio/sideBar.js"></script>
+        <script type="text/babel" src="./libs/portfolio/whatIDo.js"></script>
+        <script type="text/babel" src="./libs/portfolio/myResume.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
