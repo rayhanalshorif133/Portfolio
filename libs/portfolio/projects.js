@@ -79,57 +79,11 @@ const showcaseItems = [
 ];
 
 
-const animations = ['animate__bounceIn', 'animate__fadeInLeft', 'animate__fadeInDown', 'animate__fadeInDownBig', 'animate__flip', 'animate__lightSpeedInRight', 'animate__rotateIn'];
-
-const animations_delays = ['animate__delay-2s', 'animate__delay-1s']
-
-
-function Index() {
-
-    // re-arrange the showcase items
-    showcaseItems.sort(() => Math.random() - 0.5);
-    return (<div
-        className="grid grid-flow-row grid-cols-1 gap-0 mx-5 lg:grid-cols-2 xl:grid-cols-3 lg:gap-3 xl:gap-6 lg:mx-2 2xl:mx-0">
-        {
-            showcaseItems.map((item, index) => {
-                return <Showcase key={index} item={item} />
-            })
-        }
-    </div>);
-}
-
-function Showcase({ item }) {
-
-    const { title, image, description, url } = item;
-    const { des_title, emoji, conclusion } = description;
-    const animation = animations[Math.floor(Math.random() * animations.length)];
-    const animationsDelay = animations_delays[Math.floor(Math.random() * animations_delays.length)];
-
-    return (
-        <div className={`flex flex-col items-center justify-center my-5 cursor-pointer lg:my-0 animate__animated ${animation} ${animationsDelay}`}>
-            <a href={url} target="_blank" className="w-11/12 h-auto rounded-lg bg-[#212C40]">
-                <div className="justify-center w-10/12 mx-auto mt-6 overflow-hidden rounded-lg cursor-pointer h-52 group">
-                    <img src={image} alt={title} className="object-cover w-full h-full transition-transform duration-200 ease-in-out group-hover:scale-105" />
-                </div>
-                <div className="mx-6">
-                    <h2 className="text-white text-[14px] font-semibold text-start pt-4 pb-2">{title}</h2>
-                    <h3 className="text-[#79879C] text-[14px] font-semibold pb-2">
-                        {des_title}
-                        {emoji ? <img src={emoji} alt="emoji" className="inline-block w-4 h-4 mx-1" /> : " "}
-                        {conclusion}
-                    </h3>
-                </div>
-            </a>
-        </div>
-    )
-}
-
-
 const ProjectItemBox = ({ item }) => {
     const { title, image, description, url } = item;
     const { des_title, emoji, conclusion } = description;
     return (
-        <div className="box h-auto w-[25rem] rounded-xl py-5 group/item">
+        <a href={url} target="_blank" className="box h-auto w-[25rem] rounded-xl py-5 group/item">
             <div className="mt-2 mx-[2.8rem] transition-all duration-500 ease-in-out">
                 <div className="justify-center w-full mx-auto overflow-hidden rounded-lg cursor-pointer h-52">
                     <img src={image} alt={title} className="object-cover w-full h-full transition-transform duration-200 ease-in-out group-hover/item:scale-105" />
@@ -148,7 +102,7 @@ const ProjectItemBox = ({ item }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     );
 }
 const Projects = () => {
