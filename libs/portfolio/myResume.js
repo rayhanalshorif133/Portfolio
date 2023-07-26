@@ -21,10 +21,10 @@ const WhatIDo = () => {
                 <h4 className="text-primarySub font-montserrat text-sm tracking-wide font-medium py-1 justify-center text-center">1.7+ YEARS OF EXPERIENCE</h4>
                 <h2 className="text-[#c4cfde] text-6xl font-bold font-montserrat tracking-wide py-5 justify-center text-center">My Resume</h2>
             </div>
-            <div className="grid grid-cols-3 gap-6 h-auto justify-start py-10">
-                <ItemBox title="UX Consulting" desc="A UX consultant is responsible for many of the same tasks as a UX designer, but they typically." icon="fa-solid fa-bars" />
-                <ItemBox title="App Development" desc="We’ll handle everything from to app development process until it is time to make your project live." icon="fa-solid fa-book-open" />
-                <ItemBox title="UX Consulting" desc="A UX consultant is responsible for many of the same tasks as a UX designer, but they typically." icon="fa-solid fa-bars" />
+            <div className="btn-group btn-group-horizontal">
+                <button className="btn btn-active">Button</button>
+                <button className="btn">Button</button>
+                <button className="btn">Button</button>
             </div>
             <div class="h-[2px] w-[75%] my-10 mt-[5rem] mx-auto bg-[#000000]/40"></div>
         </div>);
