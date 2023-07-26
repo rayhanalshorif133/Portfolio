@@ -9,8 +9,8 @@ const UiNavItem = (props) => {
     return (
     <li className="my-1">
         <a href={`#${tags}`} className={`${active? "text-primary" : "text-[#A6ADBA] hover:text-primary"}`}>
-            <i className={`${icon} mx-2`}></i>
-            <span>{title}</span>
+            <i className={`${active? "text-primary" : "text-[#A6ADBA] hover:text-primary"} ${icon} mx-2`}></i>
+            <span className={`${active? "text-primary" : "text-[#A6ADBA] hover:text-primary"}`}>{title}</span>
         </a>
     </li>
     );
@@ -23,7 +23,7 @@ const UiNav = () => {
         <UiNavItem title='Features' icon='fa-solid fa-briefcase' />
         <UiNavItem title='Portfolio' icon='fa-solid fa-layer-group' />
         <UiNavItem title='Resume' icon='fa-solid fa-user-group' />
-        <UiNavItem title='Showcase' icon='fa-solid fa-store' />
+        <UiNavItem title='Projects' icon='fa-solid fa-store' />
         <UiNavItem title='Blog' icon='fa-solid fa-image' />
         <UiNavItem title='Contacts' icon='fa-solid fa-comment' />
     </ul>);
@@ -32,11 +32,10 @@ const UiNav = () => {
 const SocialIcon = (props) => {
     const { title, icon } = props;
     return (<div
-        className={`socialIcon mx-1 px-4 py-[12px] tooltip tooltip-top cursor-pointer transition duration-700 ease-in-out 
-        hover:text-${title}`}
+        className={`box mx-1 px-4 py-[12px] tooltip tooltip-top cursor-pointer transition duration-700 ease-in-out group/item`}
         data-tip={title}>
         <i
-            className={`${icon} font-bold shadow-2xl`}></i>
+            className={`${icon} font-bold shadow-2xl text-[#A6ADBA] group-hover/item:text-${title}`}></i>
     </div>)
 }
 

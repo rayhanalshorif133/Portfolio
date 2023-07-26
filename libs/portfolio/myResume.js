@@ -20,33 +20,32 @@ const NavItem = (props) => {
     );
 }
 
-const ResumeItemBoxTitle = ({year, title}) => {
+const ResumeItemBoxTitle = ({ subTitle, title }) => {
     return (<>
-        <h5 className="text-primary text-sm font-semibold font-poppins">{year}</h5>
-        <h4 className="text-white text-4xl font-semibold font-montserrat mt-2">{title}</h4>
+        <h5 className="text-primary text-sm font-semibold font-poppins">{subTitle}</h5>
+        <h4 className="text-[#c4cfde] text-4xl font-semibold font-montserrat mt-2">{title}</h4>
     </>);
 }
 
-const ResumeItemBox = () => {
+const ResumeItemBox = (props) => {
+    const { title, subTitle, slug, desc } = props;
     return (
         <div className="group/item relative my-10">
             <div className="box p-10 rounded-xl">
                 <div className="flex justify-between">
                     <div>
-                        <h2 className="font-poppins text-[24px] text-medium text-gray-300 group-hover/item:text-white">BSc in Computer Science</h2>
-                        <h4 className="text-gray-500 group-hover/item:text-white">University of BUBT (2017 - 2021)</h4>
+                        <h2 className="font-poppins text-[24px] text-medium text-gray-300 group-hover/item:text-white">{title}</h2>
+                        <h4 className="text-gray-500 group-hover/item:text-white">{subTitle}</h4>
                     </div>
                     <div className="box h-10">
-                        <p className="text-primary text-sm font-bold py-2 px-5">3.81/4</p>
+                        <p className="text-primary text-sm font-bold py-2 px-5">{slug}</p>
                     </div>
                 </div>
                 <div className="py-5">
-                    <p className="font-poppins text-lg text-gray-500 group-hover/item:text-white">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </p>
+                    <p className="font-poppins text-lg text-gray-500 group-hover/item:text-white text-justify">{desc}</p>
                 </div>
             </div>
-            <div className="absolute -top-5 -left-8 h-[20rem] w-[5px] bg-[#17191C]"></div>
+            <div className="absolute -top-5 -left-8 h-[25rem] w-[5px] bg-[#17191C]"></div>
             <div className="absolute bg-[#17191C] top-[3rem] -left-8 h-[5px] w-[2rem]"></div>
             <div className="absolute top-10 -left-[2.3rem] bg-gray-500 group-hover/item:bg-primary h-5 w-5 rounded-full border-[4px] border-[#17191C]"></div>
         </div>);
@@ -54,33 +53,83 @@ const ResumeItemBox = () => {
 
 const Education = () => {
     return (
-        <div className="grid grid-cols-2 gap-6 h-auto py-10 4xl:px-40">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto py-10 4xl:px-40">
             <div className="justify-start text-start">
-                <ResumeItemBoxTitle year='2014 - 2021' title='Education Quality'/>
+                <ResumeItemBoxTitle subTitle='2014 - 2021' title='Education Quality' />
                 <div className="mt-10 ml-8">
-                    <ResumeItemBox />
-                    <ResumeItemBox />
+                    <ResumeItemBox title="BSc in Computer Science" subTitle="University of BUBT (2017 - 2021)" slug="3.81/4" desc="The total credit hours of B.Sc. Engineering in Computer Science and Engineering degree at BUBT is 163 credits consisting of 120 theory credits and 37 lab credits and a capstone project of 6 credits." />
                 </div>
             </div>
             <div className="justify-start text-start">
-            <ResumeItemBoxTitle year='2014 - 2021' title='Education Quality'/>
-                <div className="mt-10 ml-8">
-                    <ResumeItemBox />
+                <div className="mt-[6.5rem] ml-8">
+                    <ResumeItemBox title="BSc in Computer Science" subTitle="University of BUBT (2017 - 2021)" slug="3.81/4" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" />
                 </div>
             </div>
         </div>);
 }
 
+const ProgressBar = ({ title, percent }) => {
+    return (<div className="relative pt-1">
+        <div className="flex mb-2 items-center justify-between">
+            <div>
+                <span className="text-xs font-semibold inline-block py-1 px-2 font-montserrat  uppercase text-[#c3cedd] tracking-widest">
+                    {title}
+                </span>
+            </div>
+            <div className="text-right">
+                <span className="text-xs font-semibold inline-block font-montserrat text-[#c3cedd] tracking-widest">
+                    {percent}%
+                </span>
+            </div>
+        </div>
+        <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-[#17191C]">
+            <div style={{ width: `${percent}%` }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gradient-to-r from-[#6a67ce] to-[#fc636b]"></div>
+        </div>
+    </div>);
+}
+
 const ProfessionalSkills = () => {
-    return (<div>
-        <h2>ProfessionalSkills</h2>
+    return (<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto py-10 4xl:px-40">
+        <div className="justify-start text-start">
+            <ResumeItemBoxTitle subTitle='Features' title='Development Skill' />
+            <div className="mt-10 mx-2">
+                <ProgressBar title="HTML5" percent="100" />
+                <ProgressBar title="CSS3" percent="85" />
+                <ProgressBar title="JAVASCRIPT" percent="70" />
+                <ProgressBar title="JAVASCRIPT" percent="70" />
+            </div>
+        </div>
+        <div className="justify-start text-start">
+            <ResumeItemBoxTitle subTitle='Features' title='Design Skill' />
+            <div className="mt-10 mx-2">
+                <ProgressBar title="HTML5" percent="100" />
+                <ProgressBar title="CSS3" percent="85" />
+                <ProgressBar title="JAVASCRIPT" percent="70" />
+                <ProgressBar title="JAVASCRIPT" percent="70" />
+            </div>
+        </div>
     </div>);
 }
 
 const Experience = () => {
-    return (<div>
-        <h2>Experience</h2>
-    </div>);
+    return (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto py-10 4xl:px-40">
+            <div className="justify-start text-start">
+                <ResumeItemBoxTitle subTitle='2021 - 2023' title='Job Experience' />
+                <div className="mt-10 ml-8">
+                    <ResumeItemBox title="B2M Technologies Ltd." subTitle="Software Developer - (Jan, 2023 - present)" slug="DHAKA" 
+                    desc="B2M Technologies Ltd. Incorporated in Bangladesh is connected to all major cell phone operators, providing value added services through mobile phone network. Zing Mobile Group, Singapore is 50% owner of B2M Technologies ltd. and 50% by Axiom Technologies Ltd. Bangladesh." />
+                    <ResumeItemBox title="Fashol Dotcom Limited" subTitle="Laravel Developer - (Sept, 2021 - Dec, 2022)" slug="DHAKA" desc="Fashol aims to solve ages old supply chain problems for farmers and retailers, that includes round-the-clock customer service and the fight for fair prices." />
+                </div>
+            </div>
+            <div className="justify-start text-start">
+                <ResumeItemBoxTitle subTitle='2021' title='Internship Experience' />
+                <div className="mt-10 ml-8">
+                    <ResumeItemBox title="Fashol Dotcom Limited" subTitle="Laravel Developer - (June, 2021 - Aug, 2021)" slug="DHAKA" desc="Fashol aims to solve ages old supply chain problems for farmers and retailers, that includes round-the-clock customer service and the fight for fair prices." />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 const MyResume = () => {

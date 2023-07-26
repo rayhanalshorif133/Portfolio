@@ -29,16 +29,17 @@
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js"></script>
+       
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body>
+    <body class="bg-[#212428]">
         <div class="flex">
             <div
                 class="hidden lg:flex lg:flex-col  xl:w-[25%] 2xl:w-[20%] 3xl:w-[15%] bg-[#212428] border-r-[5px] border-[#000000] h-screen overflow-y-auto no-scrollbar fixed top-0">
                 <div id="sideBar"></div>
             </div>
             <div
-                class="bg-[#212428] h-screen lg:w-full xl:w-[75%] 2xl:w-[80%] 3xl:w-[85%] text-center mx-auto justify-center mr-0 3xl:mr-10 2xl:mr-5 xl:mr-0 transition-all duration-700 ease-in-out">
+                class="bg-[#212428] h-auto py-10 lg:w-full xl:w-[75%] 2xl:w-[80%] 3xl:w-[85%] text-center mx-auto justify-center mr-0 3xl:mr-10 2xl:mr-5 xl:mr-0 transition-all duration-700 ease-in-out">
                 <div
                     class="h-[20.2rem] w-[20.2rem] rounded-full text-center items-center flex mx-auto mt-[8rem] 
                 bg-gradient-to-r from-cyan-500 to-blue-500 largeProfileImage transition-all duration-700 ease-in-out">
@@ -75,11 +76,16 @@
                 <div
                     class="h-[2px] w-[75%] my-10 mx-auto bg-[#000000]/40"></div>
                 <div id="myResume"></div>
+                <div id="projects"></div>
+                <div id="myBlog"></div>
+                
             </div>
         </div>
         <script type="text/babel" src="./libs/portfolio/sidebar.js"></script>
         <script type="text/babel" src="./libs/portfolio/whatIDo.js"></script>
         <script type="text/babel" src="./libs/portfolio/myResume.js"></script>
+        <script type="text/babel" src="./libs/portfolio/projects.js"></script>
+        <script type="text/babel" src="./libs/portfolio/myBlog.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
