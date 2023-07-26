@@ -35,7 +35,5 @@ const handleTypeWriter = () => {
         .typeString('Professional Coder')
         .pauseFor(2500)
         .start();
-
-
 }
 

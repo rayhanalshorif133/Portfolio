@@ -1,6 +1,7 @@
 tailwind.config = {
     theme: {
         screens: {
+            'sm':'375px',
             'lg': '1021px',
             'xl': '1100px',
             '2xl': '1337px',

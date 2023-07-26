@@ -4,9 +4,11 @@ const UiNavItem = (props) => {
 
     const {title,icon, active = false} = props;
 
+    const tags= title.toLowerCase().replace(" ", "_");
+
     return (
     <li className="my-1">
-        <a href="#" className={`${active? "text-primary" : "text-[#A6ADBA] hover:text-primary"}`}>
+        <a href={`#${tags}`} className={`${active? "text-primary" : "text-[#A6ADBA] hover:text-primary"}`}>
             <i className={`${icon} mx-2`}></i>
             <span>{title}</span>
         </a>
