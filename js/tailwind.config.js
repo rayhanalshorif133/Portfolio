@@ -1,12 +1,13 @@
 tailwind.config = {
     theme: {
         screens: {
-            'sm':'375px',
-            'lg': '1021px',
-            'xl': '1100px',
-            '2xl': '1337px',
-            '3xl': '1593px',
-            '4xl': '1911px',
+            'sm':'320px',
+            'md': '375px',
+            'ml': '425px',
+            'lg': '768px',
+            'xl': '1024px',
+            '2xl': '1440px',
+            '3xl': '1640px',
         },
         fontFamily: {
             'montserrat': ['Montserrat', 'sans-serif'],
