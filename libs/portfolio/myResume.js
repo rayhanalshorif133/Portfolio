@@ -10,9 +10,9 @@ const NavItem = (props) => {
     const slug = title.toLowerCase().replace(" ", "_");
 
     return (
-        <div className="box h-[6rem] w-[15rem] rounded-xl" onClick={() => handleNavItemActive(slug)}>
+        <div className="box py-4 xl:py-5 2xl:py-6 px-6 xl:px-8 2xl:px-10 rounded-xl" onClick={() => handleNavItemActive(slug)}>
             <div className="transition-all duration-500 ease-in-out">
-                <h2 className={`text-lg font-semibold ${active == true ? 'text-primary' : 'hover:text-primary'} py-9 font-poppins tracking-wide text-center`}>
+                <h2 className={`text-lg font-semibold ${active == true ? 'text-primary' : 'hover:text-primary text-gray-400'} font-poppins tracking-wide text-center`}>
                     {title}
                 </h2>
             </div>
@@ -30,7 +30,7 @@ const ResumeItemBoxTitle = ({ subTitle, title }) => {
 const ResumeItemBox = (props) => {
     const { title, subTitle, slug, desc } = props;
     return (
-        <div className="group/item relative my-10">
+        <div className="group/item relative my-10 xl:py-0">
             <div className="box p-10 rounded-xl">
                 <div className="flex justify-between">
                     <div>
@@ -53,7 +53,7 @@ const ResumeItemBox = (props) => {
 
 const Education = () => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto py-10 4xl:px-40">
+        <div className="grid grid-cols-1 2xl:grid-cols-2 gap-6 h-auto py-10 xl:py-5 xl:px-[4.8rem] 2xl:px-[2rem]">
             <div className="justify-start text-start">
                 <ResumeItemBoxTitle subTitle='2014 - 2021' title='Education Quality' />
                 <div className="mt-10 ml-8">
@@ -61,7 +61,7 @@ const Education = () => {
                 </div>
             </div>
             <div className="justify-start text-start">
-                <div className="mt-[6.5rem] ml-8">
+                <div className="2xl:mt-[6.5rem] xl:mt-0 ml-8">
                     <ResumeItemBox title="BSc in Computer Science" subTitle="University of BUBT (2017 - 2021)" slug="3.81/4" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" />
                 </div>
             </div>
@@ -162,12 +162,12 @@ const MyResume = () => {
                 <h2 className="text-[#c4cfde] text-6xl font-bold font-montserrat tracking-wide py-5 justify-center text-center">My Resume</h2>
             </div>
             <myResumeContext.Provider value={myResumeContextValue}>
-                <div className="flex box h-[6rem] rounded-xl">
+                <div className="space-y-5 lg:space-y-0 lg:flex box rounded-xl">
                     <NavItem title="Education" active={active.education} />
                     <NavItem title="Professional Skills" active={active.professionalSkills} />
                     <NavItem title="Experience" active={active.experience} />
                 </div>
-                <div className="3xl:w-[95%]">
+                <div className="2xl:px-32 3xl:px-40">
                     {active.education && <Education />}
                     {active.professionalSkills && <ProfessionalSkills />}
                     {active.experience && <Experience />}

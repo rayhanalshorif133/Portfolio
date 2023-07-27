@@ -35,11 +35,11 @@
             <div class="col-span-1 xl:col-span-2 2xl:col-span-1 hidden xl:flex border-r-[5px] border-[#000000] h-screen sticky top-0 text-center mx-auto">
                 <div id="sideBar"></div>
             </div>
-            <div class="xl:hidden bg-[#191B1E] w-[22rem] px-5 hidden absolute border-r-[1px] border-[#191B1E] h-screen mobileSideBar z-20">
+            <div class="sticky top-0 xl:hidden bg-[#191B1E] w-[22rem] px-5 hidden absolute border-r-[1px] border-[#191B1E] h-screen mobileSideBar z-20">
                 <div id="sideBarMobile"></div>
             </div>
             <div class="col-span-6 xl:col-span-4 2xl:col-span-5">
-                <div class="xl:hidden text-end m-5 p-5 navbar-toggler sticky top-0">
+                <div class="xl:hidden text-end m-5 p-5 navbar-toggler sticky top-5">
                     <i class="fa-solid fa-bars fa-2xl text-primary"></i>
                 </div>
                 <div
@@ -59,21 +59,38 @@
                 <div class="mt-5 mx-auto text-center flex justify-center flex-col lg:flex-row">
                     <a
                         class="box py-[15px] px-[35px] text-[14px] font-semibold rounded-[6px] uppercase mx-5 my-5 lg:my-0"
-                        href="#contacts"><span class="text-primary">resume</span></a>
+                        href="#resume"><span class="text-primary">resume</span></a>
                     <a
                         class="box py-[15px] px-[35px] text-[14px] font-semibold rounded-[6px] uppercase mx-5 my-5 lg:my-0"
                         href="#contacts"><span class="text-primary">contact me</span></a>
                 </div>
                 <div
-                class="h-[2px] w-[75%] my-10 mt-[8rem] mx-auto bg-[#000000]/40"></div>
+                class="h-[2px] w-[75%] my-10 mt-[5rem] mx-auto bg-[#000000]/40"></div>
                 <div id="whatIDo"></div>
+                <div
+                class="h-[2px] w-[75%] my-10 mt-[5rem] mx-auto bg-[#000000]/40"></div>
+                <div
+                    class="flex flex-col items-center justify-center transition-all duration-700 ease-in-out"
+                    id="portfolio">
+                    <div class="py-10 mx-auto justify-center text-center">
+                        <h4
+                            class="text-primarySub font-montserrat text-sm tracking-wide font-medium py-1 justify-center text-center">VISIT
+                            MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
+                        <h2
+                            class="text-[#c4cfde] text-4xl 2xl:text-5xl 3xl:text-6xl font-bold font-montserrat tracking-wide py-5 justify-center text-center">
+                            My Portfolio</h2>
+                    </div>
+                </div>
+                <div
+                    class="h-[2px] w-[75%] my-10 mx-auto bg-[#000000]/40"></div>
+                <div id="myResume"></div>
             </div>
-            <div class="col-span-6 xl:col-span-4 2xl:col-span-5 w-full h-screen bg-[#000000]/90 absolute z-10 backGroundShadow hidden"></div>
+            <div class="xl:hidden col-span-6 xl:col-span-4 2xl:col-span-5 w-full h-full bg-[#000000]/90 absolute z-10 backGroundShadow hidden"></div>
         </div>
         <script type="text/babel" src="./libs/portfolio/sidebar.js"></script>
         <script type="text/babel" src="./libs/portfolio/sideBarMobile.js"></script>
         <script type="text/babel" src="./libs/portfolio/whatIDo.js"></script>
-        <!-- <script type="text/babel" src="./libs/portfolio/myResume.js"></script> -->
+        <script type="text/babel" src="./libs/portfolio/myResume.js"></script>
         <!-- <script type="text/babel" src="./libs/portfolio/projects.js"></script> -->
         <!-- <script type="text/babel" src="./libs/portfolio/myBlog.js"></script> -->
         <script src="./js/script.js"></script>
