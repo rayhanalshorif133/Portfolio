@@ -33,7 +33,7 @@ const MyBlog = () => {
                     class="text-[#c4cfde] text-6xl font-bold font-montserrat tracking-wide py-5 justify-center text-center">
                     My Blog</h2>
             </div>
-            <div className="grid grid-cols-3 gap-6 h-auto justify-start py-10">
+            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6 h-auto py-10 xl:py-5 px-[2rem] lg:px-[5rem] xl:px-[4.3rem] 2xl:px-32 3xl:px-[11.5rem]">
                 <BlogItemBox title="Blog 1" leftSlug="GALLERY" rightSlug="4 min read" />
                 <BlogItemBox title="Blog 1" leftSlug="GALLERY" rightSlug="10 min read" />
                 <BlogItemBox title="Blog 1" leftSlug="GALLERY" rightSlug="10 min read" />

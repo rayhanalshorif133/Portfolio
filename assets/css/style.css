@@ -35,4 +35,8 @@
         scrollbar-width: none;
         /* Firefox */
     }
+
+    .h-webkit-fill-available {
+        height: -webkit-fill-available;
+    }
 }
