@@ -58,7 +58,7 @@ const ResumeItemBox = (props) => {
 
 const Education = () => {
     return (
-        <div className="2xl:px-32 3xl:px-40 grid grid-cols-1 2xl:grid-cols-2 gap-6 h-auto py-10 xl:py-5 px-[2rem] lg:px-[5rem] xl:px-[4.3rem]">
+        <div className="2xl:px-32 3xl:px-40 grid grid-cols-1 xl:grid-cols-2 gap-6 h-auto py-10 xl:py-5 px-[2rem] lg:px-[5rem] xl:px-[4.3rem]">
             <div className="justify-start text-start">
                 <ResumeItemBoxTitle subTitle='2014 - 2021' title='Education Quality' />
                 <div className="mt-10 ml-8">
@@ -66,8 +66,8 @@ const Education = () => {
                 </div>
             </div>
             <div className="justify-start text-start">
-                <div className="2xl:mt-[6.5rem] xl:mt-0 ml-8">
-                    <ResumeItemBox title="BSc in Computer Science" subTitle="University of BUBT (2017 - 2021)" slug="3.81/4" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" isExtraSideFlag={true} h={8} top={7.5} />
+                <div className="xl:mt-[6.5rem] ml-8">
+                    <ResumeItemBox title="BSc in Computer Science" subTitle="University of BUBT (2017 - 2021)" slug="3.81/4" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"/>
                 </div>
             </div>
         </div>);
@@ -131,7 +131,7 @@ const ProgressBar = (props) => {
 
 const ProfessionalSkills = () => {
     return (
-        <div className="grid grid-cols-1 2xl:grid-cols-2 gap-6 h-auto py-10 xl:py-5 px-[2rem] lg:px-[5rem] xl:px-[4.3rem] 2xl:px-32 3xl:px-[11.5rem]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 h-auto py-10 xl:py-5 px-[2rem] lg:px-[5rem] xl:px-[4.3rem] 2xl:px-32 3xl:px-[11.5rem]">
             <div className="justify-start text-start">
                 <ResumeItemBoxTitle subTitle='Features' title='Language' />
                 <div className="mt-10">
@@ -218,8 +218,8 @@ const Experience = () => {
 const MyResume = () => {
 
     const [active, setActive] = useState({
-        education: false,
-        professionalSkills: true,
+        education: true,
+        professionalSkills: false,
         experience: false
     });
 
