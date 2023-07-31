@@ -6,8 +6,9 @@ tailwind.config = {
             'ml': '425px',
             'lg': '768px',
             'xl': '1024px',
-            '2xl': '1440px',
-            '3xl': '1640px',
+            '2xl': '1280px',
+            '3xl': '1440px',
+            '4xl': '1640px',
         },
         fontFamily: {
             'montserrat': ['Montserrat', 'sans-serif'],
