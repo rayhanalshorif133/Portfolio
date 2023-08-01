@@ -25,8 +25,8 @@ const BlogItemBox = (props) => {
 }
 const MyBlog = () => {
     return (
-        <div class="flex flex-col items-center justify-center transition-all duration-700 ease-in-out" id="blog">
-            <div class="py-10 mx-auto justify-center text-center">
+        <div className="flex flex-col items-center justify-center transition-all duration-700 ease-in-out" id="blog">
+            <div className="justify-center py-10 mx-auto text-center">
                 <TitleAndSlug title=' My Blog' slug={'VISIT MY BLOG AND KEEP YOUR FEEDBACK'}/>
             </div>
             <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6 h-auto py-10 w-full px-[2rem] px-[2rem] lg:px-[5rem] xl:px-[4.3rem]  xl:py-5 2xl:px-32 3xl:px-[11.5rem]">

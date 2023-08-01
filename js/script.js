@@ -2,6 +2,7 @@ $(function () {
     handleNavBarToggle();
     handleBgGradientToR();
     handleTypeWriter();
+    handleScrollToTop();
 });
 
 const handleNavBarToggle = () => {
@@ -58,4 +59,22 @@ const handleTypeWriter = () => {
         .pauseFor(2500)
         .start();
 }
+
+const handleScrollToTop = () => {
+    var mainName = document.getElementById('mainName');
+    var whatIDo = document.getElementById('whatIDo');
+    var resume = document.getElementById('resume');
+
+    window.onscroll = function () {
+        // checkVisible(mainName) ? $('#mainName').addClass('animate__bounceInUp') : $('#mainName').removeClass('animate__bounceInUp');
+        // checkVisible(whatIDo) ? $('#whatIDo').addClass('animate__bounceInUp') : $('#whatIDo').removeClass('animate__bounceInUp');
+        // checkVisible(resume) ? $('#resume').addClass('animate__bounceInUp') : $('#resume').removeClass('animate__bounceInUp');
+    };
+}
+
+const  checkVisible = (elm) => {
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  }
 

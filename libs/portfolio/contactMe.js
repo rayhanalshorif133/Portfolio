@@ -114,7 +114,7 @@ const ContactForm = () => {
 
 const ContactMe = () => {
     return (
-        <div class="flex flex-col items-center justify-center transition-all duration-700 ease-in-out">
+        <div className="flex flex-col items-center justify-center transition-all duration-700 ease-in-out">
             <TitleAndSlug title='Contact With Me' slug={'CONTACT'} />
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 h-auto py-10 w-full px-[2rem] px-[2rem] lg:px-[5rem] xl:px-[4.3rem]  xl:py-5 2xl:px-32 3xl:px-[11.5rem]">
                 <ContactInfoBox />

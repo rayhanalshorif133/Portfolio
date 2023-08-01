@@ -1,3 +1,5 @@
+const { useState, useContext, createContext, useEffect,useRef } = React;
+
 const showcaseItems = [
     {
         'title': 'Bolt Food 🥣',
@@ -8,7 +10,9 @@ const showcaseItems = [
             'conclusion': 'Using Html and CSS',
         },
         'url': './pages/bolt_food/index.html',
-        'github_url': false
+        'github_url': false,
+        'tag': 'html_and_css',
+        'putClassName': 'animate__animated animate__bounceInUp'
     },
     {
         'title': 'Gozayaan Clone 🚀',
@@ -19,7 +23,9 @@ const showcaseItems = [
             'conclusion': 'Using HTML, CSS, Jquery',
         },
         'url': 'https://rayhanalshorif133.github.io/Gozayaan-Clone',
-        'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone'
+        'github_url': 'https://github.com/rayhanalshorif133/Gozayaan-Clone',
+        'tag': 'html_and_css',
+        'putClassName': 'animate__animated animate__bounceInUp'
     },
     {
         'title': 'Twitter Text Animation 🕊',
@@ -30,7 +36,9 @@ const showcaseItems = [
             'conclusion': 'Using Html and CSS',
         },
         'url': './pages/twitter_text_animation/index.html',
-        'github_url': false
+        'github_url': false,
+        'tag': 'html_and_css',
+        'putClassName': 'animate__animated animate__bounceInUp'
     },
     {
         'title': 'Simple Text Animation 🕊',
@@ -41,7 +49,9 @@ const showcaseItems = [
             'conclusion': 'Using Html, CSS and Js',
         },
         'url': './pages/simple_text_animation/index.html',
-        'github_url': false
+        'github_url': false,
+        'tag': 'html_and_css',
+        'putClassName': 'animate__animated animate__bounceInUp'
     },
     {
         'title': 'Lambda Clone 🤗',
@@ -52,7 +62,9 @@ const showcaseItems = [
             'conclusion': 'Using Html and CSS',
         },
         'url': 'https://rayhanalshorif133.github.io/Lambda-Website-Clone/',
-        'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone'
+        'github_url': 'https://github.com/rayhanalshorif133/Lambda-Website-Clone',
+        'tag': 'html_and_css',
+        'putClassName': 'animate__animated animate__bounceInUp'
     },
     {
         'title': 'Mouse Curser Changer',
@@ -63,7 +75,9 @@ const showcaseItems = [
             'conclusion': 'Using Html, CSS and Js',
         },
         'url': './pages/mouse_curser_changer/index.html',
-        'github_url': false
+        'github_url': false,
+        'tag': 'html_and_css',
+        'putClassName': 'animate__animated animate__bounceInUp'
     },
     {
         'title': 'Gamer Zone 🤺',
@@ -74,16 +88,74 @@ const showcaseItems = [
             'conclusion': 'Using Html and Talwindcss',
         },
         'url': './pages/gamer_zone/index.html',
-        'github_url': false
-    }
+        'github_url': false,
+        'tag': 'html_and_css',
+        'putClassName': 'animate__animated animate__bounceInUp'
+    },
+    {
+        'title': 'Gamer Zone 🤺',
+        'image': './assets/images/gif/working_on_1.gif',
+        'description': {
+            'des_title': 'Gamer Zone',
+            'emoji': './assets/images/emojis/rainbow.gif',
+            'conclusion': 'Using Html and Talwindcss',
+        },
+        'url': './pages/gamer_zone/index.html',
+        'github_url': false,
+        'tag': 'react_js',
+        'putClassName': 'animate__animated animate__bounceInUp'
+    },
+    {
+        'title': 'Gamer Zone 🤺',
+        'image': './assets/images/gif/working_on_1.gif',
+        'description': {
+            'des_title': 'Gamer Zone',
+            'emoji': './assets/images/emojis/rainbow.gif',
+            'conclusion': 'Using Html and Talwindcss',
+        },
+        'url': './pages/gamer_zone/index.html',
+        'github_url': false,
+        'tag': 'react_js',
+        'putClassName': 'animate__animated animate__bounceInUp'
+    },
+    {
+        'title': 'Gamer Zone 🤺',
+        'image': './assets/images/gif/working_on_1.gif',
+        'description': {
+            'des_title': 'Gamer Zone',
+            'emoji': './assets/images/emojis/rainbow.gif',
+            'conclusion': 'Using Html and Talwindcss',
+        },
+        'url': './pages/gamer_zone/index.html',
+        'github_url': false,
+        'tag': 'next_js',
+        'putClassName': 'animate__animated animate__bounceInUp'
+    },
+    {
+        'title': 'Gamer Zone 🤺',
+        'image': './assets/images/gif/working_on_1.gif',
+        'description': {
+            'des_title': 'Gamer Zone',
+            'emoji': './assets/images/emojis/rainbow.gif',
+            'conclusion': 'Using Html and Talwindcss',
+        },
+        'url': './pages/gamer_zone/index.html',
+        'github_url': false,
+        'tag': 'next_js',
+        'putClassName': 'animate__animated animate__bounceInUp'
+    },
 ];
 
 
+const projectContext = createContext();
+
+
 const ProjectItemBox = ({ item }) => {
-    const { title, image, description, url } = item;
+
+    const { title, image, description, url,tag, putClassName} = item;
     const { des_title, emoji, conclusion } = description;
     return (
-        <a href={url} target="_blank" className="w-full h-auto py-5 box rounded-xl group/item">
+        <a href={url} target="_blank" className={`${tag} ${putClassName} w-full h-auto py-5 box rounded-xl projectItemBox group/item animate__animated animate__bounce`}>
             <div className="mt-2 mx-[2.8rem] transition-all duration-500 ease-in-out">
                 <div className="justify-center w-full mx-auto overflow-hidden rounded-lg cursor-pointer h-52">
                     <img src={image} alt={title} className="object-cover w-full h-full transition-transform duration-200 ease-in-out group-hover/item:scale-105" />
@@ -105,11 +177,74 @@ const ProjectItemBox = ({ item }) => {
         </a>
     );
 }
-const Projects = () => {
+
+const ProjectItemTab = (props) => {
+
+    const {handleActiveTab} = useContext(projectContext);
+
+    const { title, active = false,tag } = props;
     return (
-        <div class="flex flex-col items-center justify-center transition-all duration-700 ease-in-out" id="projects">
-            <div class="py-10 mx-auto justify-center text-center">
-                <TitleAndSlug title='Projects' slug={'VISIT MY Projects AND KEEP YOUR FEEDBACK'}/>
+        <div className="flex items-center justify-center px-2 py-4 box" onClick={() => handleActiveTab(tag)}>
+            <h3 className={`text-sm ml:text-base 2lg:text-xl 2ml:text-lg font-bold  uppercase ${active ? 'text-primary' : 'text-white hover:text-primary'}`}>{title}</h3>
+        </div>
+    );
+}
+
+const Projects = () => {
+
+    const [activeTab, setActiveTab] = useState({
+        'all': true,
+        'html_and_css': false,
+        'react_js': false,
+        'next_js': false,
+        'laravel': false,
+        'node_js': false,
+        'others': false,
+    });
+
+    
+
+    const handleActiveTab = (tab) => {
+        const newActiveTab = {
+            'all': false,
+            'html_and_css': false,
+            'react_js': false,
+            'next_js': false,
+            'laravel': false,
+            'node_js': false,
+            'others': false,
+        }
+        newActiveTab[tab] = true;
+        setActiveTab(newActiveTab);
+
+        showcaseItems.forEach(item => {
+
+            if (tab === 'all') {
+                item.putClassName = 'animate__animated animate__fadeInLeft';
+            }
+            else if (tab === item.tag) {
+                item.putClassName = 'animate__animated animate__fadeInUp';
+            }else{
+                item.putClassName = 'hidden';
+            }
+        });
+    }
+
+    return (
+        <div className="flex flex-col items-center justify-center transition-all duration-700 ease-in-out" id="projects">
+            <div className="justify-center py-10 mx-auto text-center">
+                <TitleAndSlug title='Projects' slug={'VISIT MY Projects AND KEEP YOUR FEEDBACK'} />
+            </div>
+            <div className="grid grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 gap-6 h-auto py-10 w-full px-[2rem] px-[2rem] lg:px-[5rem] xl:px-[4.3rem]  xl:py-5 2xl:px-32 3xl:px-[11.5rem]">
+                <projectContext.Provider value={{ handleActiveTab }}>
+                    <ProjectItemTab title="All" tag="all" active={activeTab.all} />
+                    <ProjectItemTab title="html & css" tag="html_and_css" active={activeTab.html_and_css} />
+                    <ProjectItemTab title="React js" tag="react_js" active={activeTab.react_js} />
+                    <ProjectItemTab title="Next js" tag="next_js" active={activeTab.next_js} />
+                    <ProjectItemTab title="Laravel" tag="laravel" active={activeTab.laravel} />
+                    <ProjectItemTab title="Node Js" tag="node_js" active={activeTab.node_js} />
+                    <ProjectItemTab title="Others" tag="others" active={activeTab.others} />
+                </projectContext.Provider>
             </div>
             <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6 h-auto py-10 w-full px-[2rem] px-[2rem] lg:px-[5rem] xl:px-[4.3rem]  xl:py-5 2xl:px-32 3xl:px-[11.5rem]">
                 {

@@ -16,14 +16,14 @@ const ItemBox = (props) => {
 
 const WhatIDo = () => {
     return (
-        <div className="mt-[28.5rem] md:mt-[30.5rem] ml:mt-[25.5rem] 2ml:mt-[22.5rem] 3ml:mt-[16.5rem] lg:mt-[3.5rem] 2lg:-mt-[3.5rem] xl:mt-[8.5rem] 2xl:mt-[4.5rem] 3xl:mt-0 flex flex-col items-center justify-center lg:px-[3.5rem] xl:px-[3rem] 2xl:px-[6.5rem] 3xl:px-40">
+        <div className="mt-[35.5rem] md:mt-[30.5rem] ml:mt-[25.5rem] 2ml:mt-[26.5rem] 3ml:mt-[24.5rem] lg:mt-[10.5rem] 2lg:mt-[6.5rem] xl:mt-[8.5rem] 2xl:mt-[4.5rem] 3xl:mt-[5rem] 4xl:mt-0 flex flex-col items-center justify-center lg:px-[3.5rem] xl:px-[3rem] 2xl:px-[6.5rem] 3xl:px-40">
             <div className="justify-center py-10 mx-auto text-center" id="features">
                 <TitleAndSlug title='What I Do' slug={'FEATURES'}/>
             </div>
             <div className="grid justify-start h-auto grid-cols-1 gap-0 py-10 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 lg:gap-2 xl:gap-3">
-                <ItemBox title="UX Consulting" desc="A UX consultant is responsible for many of the same tasks as a UX designer, but they typically." icon="fa-solid fa-bars" />
-                <ItemBox title="App Development" desc="We’ll handle everything from to app development process until it is time to make your project live." icon="fa-solid fa-book-open" />
-                <ItemBox title="UX Consulting" desc="A UX consultant is responsible for many of the same tasks as a UX designer, but they typically." icon="fa-solid fa-bars" />
+                <ItemBox title="UX & UI" desc="Designing interfaces that are intuitive, efficient and enjoyable to use." icon="fa-solid fa-wand-magic-sparkles" />
+                <ItemBox title="Web Application" desc="I’ll handle everything from to web app development process until it is time to make your project live." icon="fa-solid fa-book-open" />
+                <ItemBox title="Development" desc="Bringing your vision to life with the latest technology and design trends." icon="fa-brands fa-dropbox" />
             </div>
         </div>);
 }
