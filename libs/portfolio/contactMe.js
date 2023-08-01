@@ -104,7 +104,9 @@ const ContactForm = () => {
 
             </div>
             <div className="w-full px-10">
-            Hwllo
+                <button className="uppercase text-xs font-semibold w-full px-10 py-4 mt-5 tracking-widest box fonts-Montserrat rounded-[8px] hover:text-primary hover:text-[14px]">
+                    Send Message
+                </button>
             </div>
         </div>
     );

@@ -97,10 +97,10 @@ const ProgressBarBack = ({ title, percent }) => {
 const ProgressBar = (props) => {
     const { title, percent } = props;
 
-    const [percentValue, setPercentValue] = useState(0);
+    const [percentValue, setPercentValue] = useState(30);
 
     useEffect(() => {
-        for (let i = 0; i <= percent; i++) {
+        for (let i = 30; i <= percent; i++) {
             setTimeout(() => {
                 setPercentValue(i);
             }, i * 20);
