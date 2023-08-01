@@ -1,4 +1,4 @@
-const { useState, useContext, createContext, useEffect,useRef } = React;
+const { useState, useContext, createContext, useEffect, useRef } = React;
 
 const showcaseItems = [
     {
@@ -152,7 +152,7 @@ const projectContext = createContext();
 
 const ProjectItemBox = ({ item }) => {
 
-    const { title, image, description, url,tag, putClassName} = item;
+    const { title, image, description, url, tag, putClassName } = item;
     const { des_title, emoji, conclusion } = description;
     return (
         <a href={url} target="_blank" className={`${tag} ${putClassName} w-full h-auto py-5 box rounded-xl projectItemBox group/item animate__animated animate__bounce`}>
@@ -180,9 +180,9 @@ const ProjectItemBox = ({ item }) => {
 
 const ProjectItemTab = (props) => {
 
-    const {handleActiveTab} = useContext(projectContext);
+    const { handleActiveTab } = useContext(projectContext);
 
-    const { title, active = false,tag } = props;
+    const { title, active = false, tag } = props;
     return (
         <div className="flex items-center justify-center px-2 py-4 box" onClick={() => handleActiveTab(tag)}>
             <h3 className={`text-sm ml:text-base 2lg:text-xl 2ml:text-lg font-bold  uppercase ${active ? 'text-primary' : 'text-white hover:text-primary'}`}>{title}</h3>
@@ -202,7 +202,12 @@ const Projects = () => {
         'others': false,
     });
 
-    
+    const [projectNotfound, setProjectNotfound] = useState({
+        status : false,
+        message : 'No project has been found',
+        animation : 'animate__animated animate__fadeInUp'
+    });
+
 
     const handleActiveTab = (tab) => {
         const newActiveTab = {
@@ -219,13 +224,21 @@ const Projects = () => {
 
         showcaseItems.forEach(item => {
 
+            setProjectNotfound({
+                status : false,
+                animation : 'animate__animated animate__fadeOutUp'
+            });
             if (tab === 'all') {
                 item.putClassName = 'animate__animated animate__fadeInLeft';
             }
             else if (tab === item.tag) {
                 item.putClassName = 'animate__animated animate__fadeInUp';
-            }else{
+            } else {
                 item.putClassName = 'hidden';
+                setProjectNotfound({
+                    status : true,
+                    animation : 'animate__animated animate__fadeInUp'
+                });
             }
         });
     }
@@ -253,6 +266,11 @@ const Projects = () => {
                     })
                 }
             </div>
+            {
+                projectNotfound.status && <div className="items-center justify-center px-5 py-10 mx-auto text-center box">
+                    <h1 className={`text-2xl font-semibold text-gray-200 hover:text-primary uppercase ${projectNotfound.animation}`}>Project Not Found</h1>
+                </div>
+            }
             <div className="h-[2px] w-[75%] my-10 mt-[5rem] mx-auto bg-[#000000]/40"></div>
         </div>
     );
