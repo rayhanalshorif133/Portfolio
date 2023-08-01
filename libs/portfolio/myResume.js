@@ -10,7 +10,7 @@ const NavItem = (props) => {
     const slug = title.toLowerCase().replace(" ", "_");
 
     return (
-        <div className="box py-4 xl:py-5 2xl:py-6 px-6 xl:px-8 2xl:px-10 rounded-xl" onClick={() => handleNavItemActive(slug)}>
+        <div className="px-6 py-4 box xl:py-5 2xl:py-6 xl:px-8 2xl:px-10 rounded-xl" onClick={() => handleNavItemActive(slug)}>
             <div className="transition-all duration-500 ease-in-out">
                 <h2 className={`text-lg font-semibold ${active == true ? 'text-primary' : 'hover:text-primary text-gray-400'} font-poppins tracking-wide text-center`}>
                     {title}
@@ -22,7 +22,7 @@ const NavItem = (props) => {
 
 const ResumeItemBoxTitle = ({ subTitle, title }) => {
     return (<>
-        <h5 className="text-primary text-sm font-semibold font-poppins overflow-hidden">{subTitle}</h5>
+        <h5 className="overflow-hidden text-sm font-semibold text-primary font-poppins">{subTitle}</h5>
         <h4 className="text-[#c4cfde] text-2xl 2xl:text-3xl 3xl:text-4xl font-semibold font-montserrat mt-2 overflow-hidden">{title}</h4>
     </>);
 }
@@ -30,19 +30,19 @@ const ResumeItemBoxTitle = ({ subTitle, title }) => {
 const ResumeItemBox = (props) => {
     const { title, subTitle, slug, desc, top, h = 3, isExtraSideFlag = false } = props;
     return (
-        <div className="group/item my-10 xl:py-0 relative">
-            <div className="box p-10 rounded-xl relative">
+        <div className="relative my-10 group/item xl:py-0">
+            <div className="relative p-10 box rounded-xl">
                 <div className="flex justify-between">
                     <div>
                         <h2 className="font-poppins text-[24px] text-medium text-gray-300 group-hover/item:text-white">{title}</h2>
                         <h4 className="text-gray-500 group-hover/item:text-white">{subTitle}</h4>
                     </div>
-                    <div className="box h-10">
-                        <p className="text-primary text-sm font-bold py-2 px-5">{slug}</p>
+                    <div className="h-10 box">
+                        <p className="px-5 py-2 text-sm font-bold text-primary">{slug}</p>
                     </div>
                 </div>
                 <div className="py-5">
-                    <p className="font-poppins text-lg text-gray-500 group-hover/item:text-white text-justify">{desc}</p>
+                    <p className="text-lg text-justify text-gray-500 font-poppins group-hover/item:text-white">{desc}</p>
                 </div>
                 <div className="absolute -top-5 -left-8 h-webkit-fill-available py-[2rem] w-[5px] bg-[#17191C]"></div>
                 <div className="absolute bg-[#17191C] top-[3rem] -left-8 h-[5px] w-[2rem]"></div>
@@ -74,8 +74,8 @@ const Education = () => {
 }
 
 const ProgressBarBack = ({ title, percent }) => {
-    return (<div className="relative py-2 w-full">
-        <div className="flex mb-2 items-center justify-between">
+    return (<div className="relative w-full py-2">
+        <div className="flex items-center justify-between mb-2">
             <div>
                 <span className="text-xs font-semibold inline-block py-1 px-2 font-montserrat  uppercase text-[#c3cedd] tracking-widest">
                     {title}
@@ -108,8 +108,8 @@ const ProgressBar = (props) => {
     }, [])
 
     return (
-        <div className="group/item my-0 xl:py-0 relative">
-            <div className="px-0 py-4 rounded-xl relative">
+        <div className="relative my-0 group/item xl:py-0">
+            <div className="relative px-0 py-4 rounded-xl">
                 <div className="flex justify-between">
                     <div>
                         <span className="text-xs font-bold inline-block py-1 px-2 font-montserrat  uppercase text-[#c3cedd] tracking-widest">
@@ -117,7 +117,7 @@ const ProgressBar = (props) => {
                         </span>
                     </div>
                     <div className="box">
-                        <span className="text-xs py-3 px-10 font-bold inline-block font-montserrat text-primary tracking-widest">
+                        <span className="inline-block px-10 py-3 text-xs font-bold tracking-widest font-montserrat text-primary">
                             {percentValue}%
                         </span>
                     </div>
@@ -178,13 +178,13 @@ const ProfessionalSkillsBack = () => {
     return (<div className="grid grid-cols-1 2xl:grid-cols-2 gap-6 h-auto py-10 xl:py-5 px-[2rem] lg:px-[5rem] xl:px-[4.3rem] 2xl:px-32 3xl:px-40">
         <div className="justify-start text-start">
             <ResumeItemBoxTitle subTitle='Features' title='Development Skill' />
-            <div className="mt-10 mx-2">
+            <div className="mx-2 mt-10">
                 <ProgressBar title="HTML5" percent="100" />
             </div>
         </div>
         <div className="justify-start text-start">
             <ResumeItemBoxTitle subTitle='Features' title='Design Skill' />
-            <div className="mt-10 mx-2">
+            <div className="mx-2 mt-10">
                 <ProgressBar title="HTML5" percent="100" />
                 <ProgressBar title="CSS3" percent="85" />
                 <ProgressBar title="JAVASCRIPT" percent="70" />
@@ -240,9 +240,8 @@ const MyResume = () => {
 
     return (
         <div className="flex flex-col items-center justify-center">
-            <div className="py-10 mx-auto justify-center text-center" id="resume">
-                <h4 className="text-primarySub font-montserrat text-sm tracking-wide font-medium py-1 justify-center text-center">1.7+ YEARS OF EXPERIENCE</h4>
-                <h2 className="text-[#c4cfde] text-4xl 2xl:text-5xl 3xl:text-6xl font-bold font-montserrat tracking-wide py-5 justify-center text-center">My Resume</h2>
+            <div className="justify-center py-10 mx-auto text-center" id="resume">
+                <TitleAndSlug title='My Resume' slug={'1.7+ YEARS OF EXPERIENCE'}/>
             </div>
             <myResumeContext.Provider value={myResumeContextValue}>
                 <div className="space-y-5 lg:space-y-0 lg:flex box rounded-xl">
