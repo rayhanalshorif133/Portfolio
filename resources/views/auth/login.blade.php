@@ -36,27 +36,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" /> <!--end::Fonts-->
 
     <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-    <link href="https://preview.keenthemes.com/metronic8/demo1/assets/plugins/global/plugins.bundle.css"
-        rel="stylesheet" type="text/css" />
-    <link href="https://preview.keenthemes.com/metronic8/demo1/assets/css/style.bundle.css" rel="stylesheet"
-        type="text/css" />
-    <!--end::Global Stylesheets Bundle-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!--End::Google Tag Manager -->
-
-    <script>
-        // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking)
-        if (window.top != window.self) {
-            window.top.location.replace(window.self.location.href);
-        }
-    </script>
 </head>
 <!--end::Head-->
 
 <!--begin::Body-->
 
 <body id="kt_body" class="app-blank bgi-size-cover bgi-attachment-fixed bgi-position-center">
-    <div class="my-20 d-flex flex-column flex-root min-vh-100" id="kt_app_root">
+    <div class="my-5 d-flex flex-column flex-root min-vh-100" id="kt_app_root">
         <!--begin::Page bg image-->
         <style>
             body {
@@ -70,39 +59,29 @@
             <!--begin::Content-->
             <div class="p-10 pb-0 d-flex flex-column flex-center w-100">
                 <!--begin::Image-->
-                <img class="mx-auto mb-2 theme-light-show mw-50 w-50px w-lg-150px"
+                <img class="mx-auto mt-5 mb-2 theme-light-show w-25"
                     src="{{ asset('assets/media/auth/agency.png') }}" alt="" />
                 <!--end::Image-->
 
                 <!--begin::Title-->
-                <h1 class="text-center text-gray-800 fs-qx fw-bold mb-7">
+                <h1 class="text-center text-gray-800 fs-3 fw-bold mb-7">
                     Welcome to Admin Panel
                 </h1>
                 <!--end::Text-->
             </div>
             <div class="pb-10 d-flex flex-center flex-column flex-column-fluid">
 
-                <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" method="POST"
+                <form class="mx-auto form w-75" novalidate="novalidate" id="kt_sign_in_form" method="POST"
                     action="{{ route('login') }}">
                     @csrf
                     <div class="text-center mb-11">
-                        <h1 class="mb-3 text-dark fw-bolder">
+                        <h1 class="mb-3 fs-4 text-dark fw-bolder">
                             Sign In
                         </h1>
-                        <div class="text-gray-500 fw-semibold fs-6">
-                            Your Social Campaigns
-                        </div>
-                        <!--end::Subtitle--->
-                    </div>
-                    <!--begin::Heading-->
-
-                    <!--begin::Separator-->
-                    <div class="separator separator-content my-14">
-                        <span class="text-gray-500 w-125px fw-semibold fs-7">Or with email</span>
                     </div>
                     <!--end::Separator-->
                     <!--begin::Input group--->
-                    <div class="mb-8 fv-row">
+                    <div class="my-2 mb-8">
                         <input type="email" placeholder="Email" name="email" autocomplete="off"
                             class="bg-transparent form-control @error('email') is-invalid @enderror"
                             value="{{ old('email') }}" required autocomplete="email" autofocus />
@@ -114,7 +93,7 @@
                     </div>
 
                     <!--end::Input group--->
-                    <div class="mb-3 fv-row">
+                    <div class="my-2 mb-3">
                         <!--begin::Password-->
                         <input type="password" placeholder="Password" name="password" autocomplete="off"
                             class="bg-transparent form-control @error('password') is-invalid @enderror" required
@@ -126,46 +105,12 @@
                         @enderror
                         <!--end::Password-->
                     </div>
-                    <!--end::Input group--->
-
-                    <!--begin::Wrapper-->
-                    <div class="flex-wrap gap-3 mb-8 d-flex flex-stack fs-base fw-semibold">
-                        <div></div>
-
-                        <!--begin::Link-->
-                        @if (Route::has('password.request'))
-                            <a href="{{ route('password.request') }}" class="link-primary">
-                                Forgot Password ?
-                            </a>
-                        @endif
-                        <!--end::Link-->
-                    </div>
-                    <!--end::Wrapper-->
-
-                    <!--begin::Submit button-->
-                    <div class="mb-10 d-grid">
-                        <button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
-
-                            <!--begin::Indicator label-->
-                            <span class="indicator-label">
-                                Sign In</span>
-                            <!--end::Indicator label-->
-
-                            <!--begin::Indicator progress-->
-                            <span class="indicator-progress">
-                                Please wait... <span class="align-middle spinner-border spinner-border-sm ms-2"></span>
-                            </span>
-                            <!--end::Indicator progress--> </button>
-                    </div>
-                    <!--end::Submit button-->
-
-                    <!--begin::Sign up-->
-                    <div class="text-center text-gray-500 fw-semibold fs-6">
-                        Not a Member yet?
-
-                        <a href="/metronic8/demo1/../demo1/authentication/layouts/overlay/sign-up.html"
-                            class="link-primary">
-                            Sign up
+                    <div class="my-5 mb-10 d-grid">
+                        <button type="submit" class="btn btn-outline-primary fw-normal text-uppercase">
+                            Sign In
+                        </button>
+                        <a href="{{route('welcome')}}" class="my-2 btn btn-outline-info fw-normal text-uppercase">
+                            GO TO HOME <i class="mx-1 mt-3 fa-solid fa-arrow-right fa-beat fa-2xs"></i>
                         </a>
                     </div>
                 </form>
