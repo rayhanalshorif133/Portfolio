@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .card {
+    @apply w-full h-auto px-5 mx-auto bg-white shadow-sm xl:w-8/12 2xl:w-4/12;
+  }
+  .card-header {
+    @apply py-2 border-b-[1px] border-slate-200;
+  }
+  .card-header-title {
+    @apply font-sans text-xl font-semibold text-center text-slate-600;
+  }
+
+  .from-input{
+    @apply block w-full px-3 py-2 mt-1 bg-gray-100 border-none rounded-md shadow-sm focus:ring-indigo-500 sm:text-sm;
+  }
+
+  .btn-update{
+    @apply inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none;
+  }
+
+  .alert{
+    @apply px-4 py-3 text-sm text-white bg-green-500 rounded-md;
+  }
+  .alert-danger{
+    @apply px-4 py-3 text-sm text-white bg-red-500 rounded-md;
+  }
+}
