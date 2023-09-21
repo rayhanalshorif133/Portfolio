@@ -5,8 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- fav icon -->
-        <link rel="icon" type="image/png" href="./assets/images/icons/rayhan_image.png">
-        <title>Resume - Rayhan AL Shorif</title>
+        @php
+        $siteAsset = \App\Models\SiteAsset::first();
+        @endphp
+        <link rel="shortcut icon" href="{{asset($siteAsset->admin_favicon)}}" type="image/x-icon">
+        <title> @if($siteAsset->site_title) {{$siteAsset->site_title}} @else {{ config('app.name') }} @endif </title>
         <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
             rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
