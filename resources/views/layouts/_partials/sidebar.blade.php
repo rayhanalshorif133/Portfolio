@@ -27,7 +27,7 @@
             </a>
         </div>
         <div class="">
-            <a href="{{route('admin.site')}}" class="@if ($routeName == 'admin.site')
+            <a href="{{route('admin.site.index')}}" class="@if ($routeName == 'admin.site.index')
             to-[#411D95] from-[#CC8CE6] bg-gradient-to-r
             @endif flex items-center justify-start px-4 py-3 space-x-2 text-white hover:bg-stone-700">
                 <i class="mr-2 fa-solid fa-gear fa-md"></i> <span class="text-base font-bold">Site Setting</span>

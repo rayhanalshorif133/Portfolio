@@ -33,8 +33,15 @@ Route::middleware('auth')
     ->name('admin.')
     ->group(function(){
         Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+
+        // admin user
         Route::get('/user', [UserController::class, 'adminUserIndex'])->name('user.index');
         Route::put('/user', [UserController::class, 'adminUserUpdate'])->name('user.update');
-        Route::get('/site', [SiteAssetController::class, 'index'])->name('site');
+        // admin user
+
+        // site
+        Route::get('/site', [SiteAssetController::class, 'index'])->name('site.index');
+        Route::put('/site', [SiteAssetController::class, 'update'])->name('site.update');
+        // site
 });
 
